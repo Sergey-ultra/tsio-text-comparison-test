@@ -9,6 +9,8 @@ use App\Service\CompareService;
 
 class ComparisonController
 {
+    protected CompareService $comparisonService;
+
     public function __construct()
     {
         $this->comparisonService = new CompareService();
